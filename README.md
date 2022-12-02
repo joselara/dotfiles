@@ -16,6 +16,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 
+#### omz + pl10
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+
 #### apps
 ```
 brew install wget
