@@ -95,6 +95,10 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+function mkcd() {
+  mkdir -p "$@" && cd "$_";
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
