@@ -1,0 +1,248 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "z z",
+        "command": "notebook.centerActiveCell",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "shift+f",
+        "command": "notebook.cell.collapseCellOutput",
+        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "cmd+k t",
+        "command": "-notebook.cell.collapseCellOutput",
+        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "shift+v",
+        "command": "notebook.cell.expandCellOutput",
+        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "cmd+k t",
+        "command": "-notebook.cell.expandCellOutput",
+        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "o",
+        "command": "-jupyter.notebookeditor.keybind.toggleOutput",
+        "when": "config.jupyter.enableKeyboardShortcuts && notebookEditorFocused && !inputFocus && notebookType == 'jupyter-notebook'"
+    },
+    {
+        "key": "o",
+        "command": "-list.toggleExpand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "o",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "-notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "shift+o",
+        "command": "notebook.cell.insertCodeCellAbove",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "-notebook.cell.insertCodeCellAbove",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "i i",
+        "command": "jupyter.notebookeditor.interruptkernel",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "y y",
+        "command": "notebook.cell.copy",
+        "when": "config.jupyter.enableKeyboardShortcuts && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "c",
+        "command": "-notebook.cell.copy",
+        "when": "config.jupyter.enableKeyboardShortcuts && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+l",
+        "command": "-notebook.toggleLineNumbers",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "escape",
+        "command": "-notebook.cell.quitEdit",
+        "when": "inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'"
+    },
+    {
+        "key": "escape",
+        "command": "notebook.cell.quitEdit",
+        "when": "textInputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'"
+    },
+    {
+        "key": "escape",
+        "command": "notebook.cell.quitEdit",
+        "when": "!inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'"
+    },
+    {
+        "key": "escape",
+        "command": "notebook.cell.quitEdit",
+        "when": "!inputFocus && notebookEditorFocused && !editorHoverVisible && !editorTextFocus && !vimActive"
+    },
+    {
+        "key": "shift+escape",
+        "command": "notebook.cell.quitEdit",
+        "when": "notebookEditorFocused && !editorHoverVisible"
+    },
+    {
+        "key": "0 0",
+        "command": "jupyter.restartkernel",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+enter",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "jupyter.restartkernel",
+                "jupyter.notebookeditor.runallcells"
+            ]
+        },
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+up",
+        "command": "jupyter.runallcellsabove",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "ctrl+shift+cmd+down",
+        "command": "jupyter.runcellandallbelow",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "!inputFocus"
+    },
+    {
+        "key": "shift+h",
+        "command": "workbench.action.previousEditor",
+        "when": "!inputFocus"
+    },
+    {
+        "key": "u",
+        "command": "undo",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "u",
+        "command": "undo",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "redo",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-extension.vim_ctrl+space",
+        "when": "editorTextFocus && vim.active && vim.use<C-space> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-extension.vim_shift+tab",
+        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+tab",
+        "command": "toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "p",
+        "command": "notebook.cell.paste",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "v",
+        "command": "-notebook.cell.paste",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "d d",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "d d",
+        "command": "notebook.cell.cut",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "-notebook.cell.cut",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+]

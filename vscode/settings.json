@@ -1,0 +1,144 @@
+{
+    "remote.SSH.useFlock": false,
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[stylus]": {
+        "editor.tabSize": 2,
+    },
+    "[jade]": {
+        "editor.tabSize": 2,
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Solarized Dark",
+    "files.autoSave": "off",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#fff",
+        "editorCursor.background": "#999"
+    },
+    "terminal.integrated.fontSize": 14,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "0"
+            ],
+            "after": [
+                "g",
+                "0"
+            ]
+        },
+        {
+            "before": [
+                "$"
+            ],
+            "after": [
+                "g",
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "L",
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        }
+    ],
+    "python.formatting.provider": "black",
+    "search.searchOnType": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.makeRoom",
+            "sequence": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        }
+    ],
+    "editor.fontFamily": "MesloLGS NF, Menlo, Monaco, 'Courier New', monospace",
+    "debug.console.fontSize": 12,
+    "editor.fontSize": 14,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.languageServer": "Pylance",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "git.untrackedChanges": "separate",
+    "files.insertFinalNewline": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "jupyter.maxOutputSize": 0,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": false,
+    "notebook.showFoldingControls": "always",
+    "notebook.output.textLineLimit": 25,
+    "editor.quickSuggestions": true,
+    "editor.quickSuggestionsDelay": 10,
+    "editor.suggestOnTriggerCharacters": true,
+    "window.zoomLevel": 1
+}

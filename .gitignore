@@ -1,0 +1,5 @@
+zshrc.local.symlink
+zshrc.before.local.symlink
+node_modules
+package.json
+package-lock.json
