@@ -31,14 +31,15 @@ brew install --cask iterm2
 brew install --cask sublime-text
 brew install --cask zoom
 brew install --cask microsoft-teams
-brew install --cask alfred
+brew install --cask raycast
 brew install --cask bartender
 brew install --cask visual-studio-code
 brew install --cask gitkraken
-brew install --cask 1password
+brew install --cask bitwarden
 brew install --cask cleanshot
 brew install --cask cyberduck
 brew install --cask docker
+brew install --cask arc
 brew install --cask firefox
 brew install --cask figma
 brew install --cask imageoptim
@@ -46,10 +47,8 @@ brew install --cask mullvadvpn
 brew install --cask pdf-expert
 brew install --cask pocket-casts
 brew install --cask spotify
-brew install --cask sequel-ace
+brew install --cask tableplus
 brew install --cask telegram
-brew install --cask discord
-brew install --cask whatsapp
 brew install --cask vlc
 
 

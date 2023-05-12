@@ -1,6 +1,5 @@
 cmake
 colordiff
-coreutils
 curl
 fasd
 fzf
@@ -8,9 +7,7 @@ gcc
 git
 git-flow
 gpg
-gpg-agent
 mutt
-neovim
 nmap
 pandoc
 rsync
