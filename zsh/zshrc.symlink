@@ -91,12 +91,10 @@ plugins=(
   history
   artisan
   composer
-  auto-color-ls
   aws
   z
   fd
   fzf
-  zsh-cargo-completion
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -158,6 +156,7 @@ export WASMER_DIR="/Users/jose/.wasmer"
 
 FD_OPTIONS="--follow --exclude .git --exclude node_modules"
 
+
 export FZF_DEFAULT_COMMAND='fd --type f --type l $FD_OPTIONS'
 export FZF_DEFAULT_OPTS="--no-mouse --height 50% -1 --reverse --multi --inline-info"
 
@@ -175,7 +174,7 @@ export FZF_CTRL_R_OPTS="
   --header 'Press CTRL-Y to copy command into clipboard'"
 
 
-export ZPLUG_HOME="/Users/jose/.zplug"
+export ZPLUG_HOME="$HOME/.zplug" 
 
 source ~/.zplug/init.zsh
 
@@ -187,3 +186,9 @@ zplug carloscuesta/materialshell, use:materialshell.zsh, from:github, as:theme
 
 zplug "~/.zsh", from:local
 
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme

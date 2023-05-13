@@ -8,7 +8,7 @@
 # - Symlink all `*.symlink` files into $HOME as dotfiles
 # - Download & install vim-plug and then install plugins
 
-# Are we on macOS or Linux?
+# # Are we on macOS or Linux?
 OS=$(uname -s)
 DOTFILES=$(pwd)
 
@@ -36,12 +36,12 @@ else
 fi
 
 printf "\nChanging shell to zsh...\n"
-# NOTE: You may have to run the following:
-#   sudo printf $(which zsh) >> /etc/shells`
+# NOTE: You may have to run the following:``
+  sudo printf $(which zsh) >> /etc/shells`
 chsh -s $(which zsh)
 
-printf "\nInstalling oh-my-zsh...\n"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# printf "\nInstalling oh-my-zsh...\n"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 printf "\nSymlinking '*.symlink' files...\n"
 for SOURCE_FILE in $(find $(pwd) -name '*.symlink'); do
@@ -49,12 +49,12 @@ for SOURCE_FILE in $(find $(pwd) -name '*.symlink'); do
   ln -sv "$SOURCE_FILE" $LINK_FILE;
 done
 
-printf "\nSetting up Vim...\n"
-# Install vim-plug
-mkdir -p "$HOME/.vim/autoload"
-curl -fLo "$HOME/.vim/autoload/plug.vim" --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# Install plugins
-vim +PlugInstall! +qall
+# printf "\nSetting up Vim...\n"
+# # Install vim-plug
+# mkdir -p "$HOME/.vim/autoload"
+# curl -fLo "$HOME/.vim/autoload/plug.vim" --create-dirs \
+#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# # Install plugins
+# vim +PlugInstall! +qall
 
 printf "\nDone!"
