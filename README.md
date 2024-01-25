@@ -11,7 +11,7 @@ xcode-select --install
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/jose/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jose/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
